@@ -1,13 +1,13 @@
 @charset "UTF-8"
 @font-face {
     font-family: 'Bonny';
-    src: url(/Fuentes/Bonny-Bold.otf);
+    src: url(Bonny-Bold.woff);
 }
 @font-face {
     font-family: 'Satoshi';
-    src: url(/Fuentes/Satoshi-Bold.otf/);
-    src: url(/Fuentes/Satoshi-Medium.otf/);
-    src: url(/Fuentes/Satoshi-Light.otf);
+    src: url(Satoshi-Bold.woff);
+    src: url(Satoshi-Medium.woff);
+    src: url(Satoshi-Light.woff);
 }
 @font-face {
     font-family: 'Cabinet Grotesk';
