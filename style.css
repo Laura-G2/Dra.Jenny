@@ -1,0 +1,409 @@
+@charset "UTF-8"
+@font-face {
+    font-family: 'Bonny';
+    src: url(/Fuentes/Bonny-Bold.otf);
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url(/Fuentes/Satoshi-Bold.otf/);
+    src: url(/Fuentes/Satoshi-Medium.otf/);
+    src: url(/Fuentes/Satoshi-Light.otf);
+}
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url(/Fuentes/CabinetGrotesk-Regular.otf);
+}
+
+
+/*Menú*/
+header{
+    position: fixed;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-height:100px;
+    padding-right:125px;
+    padding-left:125px;
+   
+   
+}
+.menu ul{
+    display: flex;
+  list-style: none;
+}
+.menu a{  
+    text-decoration: none;
+    text-align: center;
+    color: #254A50;
+    font-family: 'Cabinet Grotesk';
+    font-size: 20pt;
+    padding: 40px 20px;
+    border-radius: 0px;
+    display: block;
+
+}
+.menu a:hover{
+    background-color: #EEE7DF;
+    color: #386966;
+    transition: all 0.5s ease;
+     }
+.menu li{
+    float: right;
+}
+
+/*Textos*/
+
+h1 {
+
+    font-size: 4.15rem;
+    font-family: 'Bonny';
+    margin-bottom: 5px;
+}
+
+h2{
+    font-size: 25pt;
+    font-family: 'Satoshi';
+    font-style: bold;
+    margin-top: 0;
+}
+h3{
+    font-size: 20pt;
+    font-family: 'Satoshi';
+    font-style: bold;
+}
+h4{
+    font-size: 13pt;
+    font-family: 'Satoshi';
+    font-weight: medium;
+}
+p{
+    font-size: 13pt;
+    font-family: 'Satoshi';
+    font-weight: lighter;
+ }
+
+/*imagenes p,completa*/
+img{
+    width: 100%;
+}
+.logo{
+ width: 20%;
+ height: auto;
+}
+/*body*/
+body{
+    background-color:#EDE6DE;
+    margin: 0;
+}
+
+/*Para titulos*/
+.caja-tituloderecha{
+    text-align: center;
+    margin: 100px 50px auto ;
+    color: #254A50;
+}
+.caja-tituloderechaclaro{
+    text-align: center;
+    margin: 100px 30px auto ;
+    padding: 30px;
+    color: #EDE6DE; }
+
+    /*seccion inicio*/
+.container-fondo1{
+   width: 100%; 
+   height: 100vh;
+   position: relative;
+   background: url(susan-wilkinson-k0e9Um55y8I-unsplash.jpg) ;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+}
+.caja-transparente{
+    max-width:70%;
+    height: 70%;
+    border: 2px solid #fafafa10;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.area-textoinicio{
+    text-align: left;
+    margin-left: 70px;
+    width: 50%;
+    color: #EDE6DE;
+}
+.area-imagen{
+    margin-right: 80px;
+}
+.area-imagen img{
+    max-height:60vh;
+ }
+.btn-contactame{
+    color: #254A50;
+    background-color: #EDE6DE;
+    border-radius: 50px 50px;
+    padding: 20px 70px;
+    text-decoration: none;
+    font-family: 'Cabinet Grotesk';
+    font-weight: bold;
+    font-size: 20pt;
+    display: inline-block;  
+    margin-top: 30px; 
+}
+@media (max-width: 1200px) {
+    .caja-transparente {
+      flex-direction: column;       /* De fila a columna */
+      height: auto;                 /* Deja que la altura se ajuste al contenido */
+      padding: 20px;
+      gap: 20px;                    /* Espacio entre texto e imagen */
+      align-items: center;
+      margin-top: 30px;
+    }
+  
+    .area-textoinicio {
+      width: 90%;                   /* Texto más ancho en móvil */
+      margin: 20px;
+      text-align: center;
+    }
+  
+    .area-textoinicio h1 {
+      font-size: 30pt;              /* Tamaño más pequeño si se necesita */
+    }
+  
+    .btn-contactame {
+      padding: 15px 50px;
+      font-size: 16pt;
+    }
+  
+    .area-imagen {
+      margin: 0; 
+      justify-content: center;
+    }
+  
+    .area-imagen img {
+      max-height: 250px;
+      width: auto;
+      height: auto;
+    }
+
+    .container-quehacemos{
+        flex-direction: column;       
+        height: auto;                
+        padding:0px;                    
+        align-items: center;  
+    }
+    .container-que2{
+        flex-direction: column;       
+        height: auto;                
+        padding:0px;                    
+        align-items: center;  
+    }
+  }
+
+/*sección Bienvenidos*/
+
+.container-quehacemos{
+    margin: 50px auto;
+    background-color: #254A50;
+    border-radius: 10px;
+    display: flex;
+    max-width: 800px;
+    color: #EDE6DE;
+
+}
+.container-que2{
+    margin: 50px auto;
+    background-color: #7DA0AB;
+    border-radius: 10px;
+    display: flex;
+    max-width: 800px;
+    color: #254A50;
+}
+
+.texto-bienvenido{
+    text-align: left;
+    padding: 30px 20px 30px 90px;
+    width: 50%;
+    color: #EEE7DF;
+    
+}
+.img-bienvenido{
+    background-color: #EEE7DF;
+    border-radius: 10px;
+    max-width: 250px;
+    height: 245px;
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.img-bienvenido img{
+   margin: 10px;
+   width: 230px;
+}
+
+/*sección consultorio*/
+#consultorio{
+margin-top: 100px;
+padding-bottom: 0;
+overflow: auto;
+margin: 0;;
+}
+.img-consultorio {
+    width: 100%; 
+    height:130vh;
+    position: relative;
+    background:url('Recurso\ 22.png') ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.texto-consultorio {
+        max-width:40%;
+        height: fit-content;
+        border: 2px solid #fafafa10;
+        margin: 20px auto;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(4px);
+        box-sizing: border-box;
+        border-radius: 20px;
+       text-align: center;
+        padding: 20px;
+        color: #254A50;
+    }
+  /*sección tratamientos*/
+#tratamientos{   
+    padding: 20px auto;
+}
+
+.area-contenedores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px auto;
+    padding: 0;
+    max-width: 1200px;
+  }
+
+.container-tratamientos{
+    max-width: 280px;
+    height: fit-content; 
+    margin:50px 20px;
+}
+.imagen-tratamiento{
+    background-color: #254A50;
+    border-radius: 10px 160px 10px 10px;
+    width: 280px;
+    height: fit-content;
+}
+.imagen-tratamiento img{
+    margin: 15px;
+    width: 250px
+}
+.nombres-tratamientos{
+    color: #254A50;
+    text-align: left;
+    padding: 20px 0 0 0;
+}
+.boton-vermas{
+    background-color: #254A50;
+    border-radius: 5px 5px 5px 50px;
+    width: 280px;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    color: #EDE6DE;
+    text-decoration: none;
+    align-items: center;
+    font-family: 'Cabinet Grotesk';
+    font-weight: bold;
+    font-size: 20pt;
+}
+.boton-vermas img{
+    margin: 0;
+    image-orientation: left;
+    width: 22%;
+    margin-right: 30px;
+}
+
+.boton-vermas:hover{
+    background-color: #7DA0AB;
+    color: #254A50;
+    transition: all 0.5s ease;
+}
+
+/*testimonios*/
+#testimonios {
+    width: 100%;
+    height: 100vh;
+    background: url(susan-wilkinson-k0e9Um55y8I-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #254A50;
+  
+  }
+  
+  .contenedor-testimonio {
+   max-width: 500px;
+    margin: 50px 70px;
+    background-color: #EDE6DE;
+    border-radius: 15px;
+    display: flex;
+    padding: 20px;
+    flex: 1 0 auto;
+  }
+
+  
+  .contenedor-testimonio img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .texto-testimonio {
+    text-align: right;
+    color: #254A50;
+    width: 60%;
+    padding: 10px;
+  }
+.carrusel{
+    overflow: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+}
+
+/*mapa*/
+
+/*footer*/
+footer{
+    margin: 0;
+    background-color: #EDE6DE;
+    display: flex;
+    font-family: 'Satoshi';
+    font-weight: bold;
+    color: #254A50;
+    text-align: center;
+    justify-content: center;
+}
+.texto-footer{
+    padding: 15px;
+    margin: 0 100px;
+}
+.container-footer{
+    width: 100%;
+    display: flex;
+    background-color: #EDE6DE;
+    color: #254A50;
+    justify-content: center;
+}
