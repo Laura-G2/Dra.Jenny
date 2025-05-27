@@ -1,0 +1,171 @@
+@charset "UTF-8"
+@font-face {
+    font-family: 'Bonny';
+    src: url(/Fuentes/Bonny-Bold.otf);
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url(/Fuentes/Satoshi-Bold.otf/);
+    src: url(/Fuentes/Satoshi-Medium.otf/);
+    src: url(/Fuentes/Satoshi-Light.otf);
+}
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url(/Fuentes/CabinetGrotesk-Regular.otf);
+}
+
+
+/*Menú*/
+
+header{
+    position: fixed;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-height:100px;
+    padding-right:125px;
+    padding-left:125px;
+   
+   
+}
+.menu ul{
+    display: flex;
+  list-style: none;
+}
+.menu a{  
+    text-decoration: none;
+    text-align: center;
+    color: #272326;
+    font-family: 'Cabinet Grotesk';
+    font-size: 20pt;
+    padding: 40px 20px;
+    border-radius: 0px;
+    display: block;
+
+}
+.menu a:hover{
+    background-color: #272326;
+    color:#EDE6DE;
+    transition: all 0.5s ease;
+     }
+.menu li{
+    float: right;
+}
+
+/*Textos*/
+
+h1 {
+
+    font-size: 4.15rem;
+    font-family: 'Bonny';
+    margin-bottom: 5px;
+}
+
+h2{
+    font-size: 25pt;
+    font-family: 'Satoshi';
+    font-style: bold;
+    margin-top: 0;
+}
+h3{
+    font-size: 20pt;
+    font-family: 'Satoshi';
+    font-style: bold;
+}
+h4{
+    font-size: 13pt;
+    font-family: 'Satoshi';
+    font-weight: medium;
+}
+p{
+    font-size: 13pt;
+    font-family: 'Satoshi';
+    font-weight: lighter;
+ }
+
+/*imagene logo*/
+.logo{
+ max-width: 20%;
+ height: auto;
+ margin: 5px;
+}
+
+body{
+    margin:0px;
+    background-color: #EEE7DF;
+}
+/*Para titulos*/
+.caja-titulo{
+    text-align: right;
+    margin: 0 125px  80px 125px ;
+    color: #272326;
+}
+
+ /*sección tratamientos de armonización*/
+
+ #armonización-facial{
+    margin: 100px auto;
+    justify-content: center;
+    text-align: center;
+    color: #272326;
+    width: 900px;
+    background-color: #EDE6DE;
+ }
+
+.container-tratamientos{
+    max-width: 280px;
+    height: fit-content; 
+    margin: 50px auto;
+}
+.imagen-tratamiento{
+    b
+    border-radius: 160px 160px 10px 10px;
+    width: 280px;
+    height: fit-content;
+}
+.imagen-tratamiento img{
+    margin: 15px;
+    width: 250px
+}
+
+#microblanding{
+    margin: 50px auto;
+    justify-content: center;
+    text-align: center;
+    color:#EEE7DF;
+    background-color: #8F9892;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+.texto3{
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+
+/*footer*/
+footer{
+    margin: 0;
+    background-color: #EDE6DE;
+    display: flex;
+    font-family: 'Satoshi';
+    font-weight: bold;
+    color:#272326;
+    text-align: center;
+    justify-content: center;
+}
+.texto-footer{
+    padding: 15px;
+    margin: 0 100px;
+}
+.container-footer{
+    width: 100%;
+    display: flex;
+    background-color: #EDE6DE;
+    color:#272326;
+    justify-content: center; }
